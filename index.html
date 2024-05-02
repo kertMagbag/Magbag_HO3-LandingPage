@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Shop</title>
+        <link rel="icon" href="Logo.png"/>
+        <link rel="Stylesheet" href="style.css"/>
+        <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Catamaran:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fugaz+One&family=Langar&family=Lilita+One&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Pattaya&family=Playball&family=Rye&family=Seaweed+Script&family=Song+Myung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Catamaran:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fugaz+One&family=Langar&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Pattaya&family=Playball&family=Rye&family=Seaweed+Script&family=Song+Myung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Catamaran:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fugaz+One&family=Langar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand+SC&family=Pattaya&family=Playball&family=Rye&family=Seaweed+Script&family=Song+Myung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Catamaran:wght@100..900&family=Fugaz+One&family=Langar&family=Pacifico&family=Patrick+Hand+SC&family=Pattaya&family=Playball&family=Rye&family=Seaweed+Script&family=Song+Myung&display=swap" rel="stylesheet">
+    </head>
+        <body>
+          <nav>
+            <input type="checkbox" id="check"/>
+            <label for ="check" class = "checkbtn">
+                <i class = "fas fa-bars"></i>
+            </label>
+            <a class = "logo" href="index.html"><img src="intro-logo.png" alt="Error"></a>
+            <ul>
+                <li><a class="active" href="index.html" onclick="closeMenu()">Home</a></li>
+                 <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+                 <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                 <li><a href="signIn.html" onclick="closeMenu()">Sign In</a></li>
+               
+            </ul>
+          </nav>
+          
+          <main>
+            <section class = "index-banner">
+                <div class = "vertical-center">
+                    <h1>Arcoff Cafe <br> <span class = "idol">(Cafe-ling ka)</span></h1>
+                    <h2 id = "banner-text">Looking for a perfect espresso escafe? <br>Start your day right with The Arcoff Cafe.<br> Every sip is a perfect trip.</h2>
+                </div>
+                <div class="btn">
+                  <button class = "Order" onclick="scrollToMenu()">Order Now</button>
+              </div>
+            </section>
+            <section id="contact" class="contact-section">
+                
+            </section>
+          </main>
+          <!--DITO MAG SISIMULA ANG CART-->
+            <div class="container">
+                <header id = "menu">
+                    <h1 class = "menu">My Menu</h1>
+                    <div class="shopping">
+                        <img class = "icon" src="icon.png" alt="Error">
+                        <span class="quantity">0</span>
+                    </div>
+                </header>
+                <div class="list">
+
+                </div>
+                <div class="card">
+                    <h1>Your Cart</h1>
+                    <ul class="listCard"></ul>
+                    <div class="checkOut">
+                        <div class="total">0</div>
+                        <div class="closeShopping">Close</div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <a href="https://www.facebook.com/kertadrianmagbag.magbag/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kert_magbag/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/kertMagbag"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/channel/UC9NVS1R3bdvHKzQg_4J0Dew"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="">Stores</a></li>
+                            <li><a href="">Customer Care</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="">Feedback</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+               
+            </footer>
+        <script src = "script.js"></script>
+        
+        </body>
+</html>
